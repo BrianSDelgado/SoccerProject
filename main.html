@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics Project – Goal-Scoring Careers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Top header -->
+        <header class="top-header">
+            <h1>Data Visualization and Statistics Projects</h1>
+            <h3>by Brian Delgado</h3>
+        </header>
+
+        <!-- Main tan content area -->
+        <main class="content-frame">
+            <!-- Using the Materials box -->
+            <section class="using-materials">
+                <h2>Using the Materials</h2>
+                <p>
+                    This project uses real match data to explore the goal-scoring
+                    careers of four elite forwards. Each tile below corresponds
+                    to one player and includes links to the data, a Tableau and
+                    Excel dashboard, and a brief description of suggested
+                    analysis ideas. The materials are intended to be adapted and
+                    reused for statistics and data visualization assignments.All following Scientific <a href="Report/Goal-Scoring Project.pdf">Report be here.</a> 
+                </p>
+            </section>
+            <!-- NEW banner strip -->            
+             <div class="banner-strip">
+                <!-- change the src to match your file name -->
+                 <img src="images/Project_Banner.png" alt="Goal-scoring careers banner">
+                </div>
+
+
+            <!-- Section bar -->
+            <div class="section-bar">
+                Goal-Scoring Careers Project
+            </div>
+
+            <!-- 4 player tiles -->
+            <section class="tiles-grid">
+                <!-- Messi -->
+                <article class="player-tile">
+                    <div class="tile-text">
+                        <h3>Lionel Messi</h3>
+                        <ul>
+                            <!-- LINKS: update these href paths -->
+                            <li>
+                                <strong>Data:</strong>
+                                <a href="data/messi.csv.xlsx">Excel File</a>
+                                and
+                                
+                                <a href="data/messiEXCELDB.csv.xlsx">Excel_Dashboard</a>
+                            </li>
+                            <li>
+                                <strong>R:</strong>
+                                <a href="code/players_code.r">R Code</a>
+                            </li>
+                            <li>
+                                <strong>Dashboard:</strong>
+                                <!-- If you paste Tableau Public, paste the full URL here -->
+                                <a href="Dashboard/players_dashboard.twbx">
+                                    Tableau Workbook
+                                </a>
+                            </li>
+
+                            <li>
+                                <strong>Project:</strong>
+                                Aggregate goals by year and model Messi’s scoring
+                                output as a function of time. Estimate when he
+                                reaches peak scoring form and how quickly his
+                                performance declines afterward.
+                            </li>
+                            <li>
+                                <strong>Skills:</strong>
+                                Time-series plots, curve fitting, discrete
+                                derivatives, interpreting slopes and maxima.
+                            </li>
+                            <li>
+                                <strong>Notes:</strong>
+                                Interesting to compare his Barcelona years with
+                                his later seasons. Consider how league,
+                                teammates, and age might influence the trend.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tile-image">
+                        <!-- Replace with your own image file -->
+                        <img src="images/MESSI10.jpg" alt="Lionel Messi">
+                    </div>
+                </article>
+
+                <!-- Ronaldo -->
+                <article class="player-tile">
+                    <div class="tile-text">
+                        <h3>Cristiano Ronaldo</h3>
+                        <ul>
+                            <!-- LINKS -->
+                            <li>
+                                <strong>Data:</strong>
+                                <a href="data/ronaldo.csv.xlsx">Excel File</a>
+                                and
+                                <a href="data/ronaldoEXCELDB.csv.xlsx">Excel_Dashboard</a>
+                            </li>
+                             <li>
+                                <strong>R:</strong>
+                                <a href="code/players_code.r">R Code</a>
+                            </li>
+                            <li>
+                                <strong>Dashboard:</strong>
+                                <a href="Dashboard/players_dashboard.twbx">
+                                    Tableau Workbook
+                                </a>
+                            </li>
+
+                            <li>
+                                <strong>Project:</strong>
+                                Build a yearly goals time series and analyze how
+                                his scoring changes as he moves between leagues
+                                and teams. Identify his peak seasons using a
+                                fitted curve.
+                            </li>
+                            <li>
+                                <strong>Skills:</strong>
+                                Multi-club time-series analysis, polynomial
+                                modeling, comparison of growth and decline rates.
+                            </li>
+                            <li>
+                                <strong>Notes:</strong>
+                                Transfers between clubs may create visible jumps
+                                in the data. Discuss how changes in role or
+                                league strength may affect his curve.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tile-image">
+                        <img src="images/CR7.jpg" alt="Cristiano Ronaldo">
+                    </div>
+                </article>
+
+                <!-- Neymar -->
+                <article class="player-tile">
+                    <div class="tile-text">
+                        <h3>Neymar</h3>
+                        <ul>
+                            <!-- LINKS -->
+                            <li>
+                                <strong>Data:</strong>
+                                <a href="data/neymar.csv.xlsx">Excel File</a>
+                                and
+                                <a href="data/neymarExcelDB.csv.xlsx">Excel_Dashboard</a>
+                            </li>
+                             <li>
+                                <strong>R:</strong>
+                                <a href="code/players_code.r">R Code</a>
+                            </li>
+                            <li>
+                                <strong>Dashboard:</strong>
+                                <a href="Dashboard/players_dashboard.twbx">
+                                    Tableau Workbook
+                                </a>
+                            </li>
+
+                            <li>
+                                <strong>Project:</strong>
+                                Examine Neymar’s progression from early career to
+                                more recent seasons. Use derivatives to highlight
+                                periods of rapid improvement or reduced output.
+                            </li>
+                            <li>
+                                <strong>Skills:</strong>
+                                Smoothing noisy data, discrete rate-of-change
+                                calculations, linking numerical patterns to
+                                possible injuries or role changes.
+                            </li>
+                            <li>
+                                <strong>Notes:</strong>
+                                Missing seasons or injuries can create gaps; these
+                                can be mentioned as limitations in the analysis.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tile-image">
+                        <img src="images/Ney10.jpg" alt="Neymar">
+                    </div>
+                </article>
+
+                <!-- Lewandowski -->
+                <article class="player-tile">
+                    <div class="tile-text">
+                        <h3>Robert Lewandowski</h3>
+                        <ul>
+                            <!-- LINKS -->
+                            <li>
+                                <strong>Data:</strong>
+                                <a href="data/lewandowski.csv.xlsx">Excel File</a>
+                                and
+                                <a href="data/lewandowskiEXCELDB.csv.xlsx">Excel_Dashboard</a>
+                            </li>
+                             <li>
+                                <strong>R:</strong>
+                                <a href="code/players_code.r">R Code</a>
+                            </li>
+                            <li>
+                                <strong>Dashboard:</strong>
+                                <a href="Dashboard/players_dashboard.twbx">
+                                    Tableau Workbook
+                                </a>
+                            </li>
+
+                            <li>
+                                <strong>Project:</strong>
+                                Analyze Lewandowski’s scoring consistency over
+                                time and compare his peak years to those of the
+                                other forwards in this project.
+                            </li>
+                            <li>
+                                <strong>Skills:</strong>
+                                Comparing multiple fitted curves, analyzing long
+                                periods of high performance, visual comparison of
+                                different players.
+                            </li>
+                            <li>
+                                <strong>Notes:</strong>
+                                His long prime in top European leagues makes him
+                                a good example of sustained peak performance.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tile-image">
+                        <img src="images/lewandowski9.jpg" alt="Robert Lewandowski">
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
