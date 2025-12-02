@@ -44,10 +44,10 @@ process_player <- function(file_path, player_name) {
 #  as this script OR in the working dir)
 #---------------------------------
 
-messi_yearly <- process_player("messi.csv",        "Lionel Messi")
-ron_yearly   <- process_player("ronaldo.csv",      "Cristiano Ronaldo")
-ney_yearly   <- process_player("neymar.csv",       "Neymar")
-lew_yearly   <- process_player("lewandowski.csv",  "Robert Lewandowski")
+messi_yearly <- process_player("messi.csv.xlsx",        "Lionel Messi")
+ron_yearly   <- process_player("ronaldo.csv.xlsx",      "Cristiano Ronaldo")
+ney_yearly   <- process_player("neymar.csv.xlsx",       "Neymar")
+lew_yearly   <- process_player("lewandowski.csv.xlsx",  "Robert Lewandowski")
 
 players_yearly <- bind_rows(messi_yearly, ron_yearly, ney_yearly, lew_yearly)
 
